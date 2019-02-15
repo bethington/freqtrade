@@ -188,6 +188,7 @@ docker run -d \
   -v /etc/localtime:/etc/localtime:ro \
   -v ~/.freqtrade/config.json:/freqtrade/config.json \
   -v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
+  -v ~/.freqtrade/user_data/:/freqtrade/user_data/ \
   freqtrade --db-url sqlite:///tradesv3.sqlite
 ```
 
