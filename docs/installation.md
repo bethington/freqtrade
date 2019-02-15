@@ -222,7 +222,7 @@ docker run -d \
   -v ~/.freqtrade/config.json:/freqtrade/config.json \
   -v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
   -v ~/.freqtrade/user_data/:/freqtrade/user_data/ \
-  freqtrade --strategy AwsomelyProfitableStrategy backtesting
+  freqtrade --strategy strategy001 backtesting
 ```
 
 Head over to the [Backtesting Documentation](https://github.com/freqtrade/freqtrade/blob/develop/docs/backtesting.md) for more details.
