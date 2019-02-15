@@ -223,6 +223,16 @@ docker run -d \
   -v ~/.freqtrade/config.json:/freqtrade/config.json \
   -v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
   -v ~/.freqtrade/user_data/:/freqtrade/user_data/ \
+  python /freqtrade/scripts/download_backtest_data.py --exchange binance
+```
+
+``` bash
+docker run -d \
+  --name freqtrade \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v ~/.freqtrade/config.json:/freqtrade/config.json \
+  -v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
+  -v ~/.freqtrade/user_data/:/freqtrade/user_data/ \
   freqtrade --strategy strategy001 backtesting
 ```
 
