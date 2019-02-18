@@ -220,9 +220,9 @@ Also, backtest-data should be available at `~/.freqtrade/user_data/`.
 docker run -d \
   --name freqtrade \
   -v /etc/localtime:/etc/localtime:ro \
-  -v ~/.freqtrade/config.json:/freqtrade/config.json \
-  -v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
-  -v ~/.freqtrade/user_data/:/freqtrade/user_data/ \
+  -v ~/.freqtrade-backtesting/config.json:/freqtrade/config.json \
+  -v ~/.freqtrade-backtesting/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
+  -v ~/.freqtrade-backtesting/user_data/:/freqtrade/user_data/ \
   python /freqtrade/scripts/download_backtest_data.py --exchange binance
 ```
 
@@ -230,9 +230,9 @@ docker run -d \
 docker run -d \
   --name freqtrade \
   -v /etc/localtime:/etc/localtime:ro \
-  -v ~/.freqtrade/config.json:/freqtrade/config.json \
-  -v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
-  -v ~/.freqtrade/user_data/:/freqtrade/user_data/ \
+  -v ~/.freqtrade-backtesting/config.json:/freqtrade/config.json \
+  -v ~/.freqtrade-backtesting/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
+  -v ~/.freqtrade-backtesting/user_data/:/freqtrade/user_data/ \
   freqtrade --strategy strategy001 backtesting
 ```
 
