@@ -218,7 +218,7 @@ Also, backtest-data should be available at `~/.freqtrade/user_data/`.
 
 ``` bash
 docker run -d \
-  --name freqtrade \
+  --name freqtrade-bt \
   -v /etc/localtime:/etc/localtime:ro \
   -v ~/.freqtrade-backtesting/config.json:/freqtrade/config.json \
   -v ~/.freqtrade-backtesting/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
@@ -228,7 +228,7 @@ docker run -d \
 
 ``` bash
 docker run -d \
-  --name freqtrade \
+  --name freqtrade-bt \
   -v /etc/localtime:/etc/localtime:ro \
   -v ~/.freqtrade-backtesting/config.json:/freqtrade/config.json \
   -v ~/.freqtrade-backtesting/tradesv3.sqlite:/freqtrade/tradesv3.sqlite \
